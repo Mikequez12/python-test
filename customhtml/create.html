@@ -4,5 +4,5 @@
     var urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
   }
-  document.body.innerHTML = btoa(getQueryParam('v'));
+  document.body.innerHTML = atob(getQueryParam('v'));
 </script>
